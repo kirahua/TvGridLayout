@@ -1,4 +1,4 @@
-# 欢迎使用Android TVGridLayout
+# 欢迎使用Android TVGridLayout [ ![Download](https://api.bintray.com/packages/zhousuqiang/maven/tv-gridlayout/images/download.svg) ](https://bintray.com/zhousuqiang/maven/tv-gridlayout/_latestVersion)
 
 ### 效果
 
@@ -7,6 +7,11 @@
 ![](https://github.com/zhousuqiang/TvGridLayout/blob/master/image/3333.gif)
 ![](https://github.com/zhousuqiang/TvGridLayout/blob/master/image/4444.gif)
 
+
+### Gradle 引入
+```java
+implementation 'com.owen:tv-gridlayout:1.0.0'
+```
 
 ### 更详细的使用请见exmaple
 

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -11,6 +12,10 @@ android {
 
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -18,6 +23,15 @@ android {
         }
     }
 
+}
+
+publish {
+    userOrg = 'zhousuqiang'
+    groupId = 'com.owen'
+    artifactId = 'tv-gridlayout'
+    publishVersion = '1.0.0'
+    desc = '适配Android Tv 端的 GridLayout，对焦点、间距等进行优化'
+    website = 'https://github.com/zhousuqiang/TvGridLayout'
 }
 
 dependencies {
