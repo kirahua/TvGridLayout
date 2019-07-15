@@ -252,7 +252,7 @@ public class TvGridLayout extends GridLayout implements View.OnFocusChangeListen
             if (null != mOnItemListener) {
                 mOnItemListener.onItemPreSelected(this, child, position);
             }
-            postDelayed(mLostFocusRunnable, 200);
+            postDelayed(mLostFocusRunnable, 6);
         }
     }
 
