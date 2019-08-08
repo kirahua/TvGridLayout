@@ -401,7 +401,7 @@ public class TvGridLayout extends GridLayout implements View.OnFocusChangeListen
 
     public static abstract class Adapter<T> {
         private List<AdapterDataObserver> mObservers = new ArrayList<>();
-        private List<T> mDatas;
+        protected List<T> mDatas;
 
         public Adapter() {
 
@@ -419,6 +419,10 @@ public class TvGridLayout extends GridLayout implements View.OnFocusChangeListen
             if (null != datas) {
                 this.mDatas.addAll(datas);
             }
+        }
+
+        public int getItemCount() {
+            return null == mDatas ? 0 : mDatas.size();
         }
 
         ViewHolder onCreateViewHolder(int position, Context context, ViewGroup parent) {
@@ -450,8 +454,6 @@ public class TvGridLayout extends GridLayout implements View.OnFocusChangeListen
         public void unregisterAdapterDataObserver(@NonNull AdapterDataObserver observer) {
             mObservers.remove(observer);
         }
-
-        public abstract int getItemCount();
 
         public abstract int getItemLayout(int position, int viewType);
 
