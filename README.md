@@ -10,7 +10,7 @@
 
 ### Gradle 引入
 ```java
-implementation 'com.owen:tv-gridlayout:1.0.2'
+implementation 'com.owen:tv-gridlayout:1.0.4'
 ```
 
 ### 更详细的使用请见exmaple

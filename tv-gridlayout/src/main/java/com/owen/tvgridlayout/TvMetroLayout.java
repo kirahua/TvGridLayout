@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.OverScroller;
 import android.widget.ScrollView;
@@ -23,6 +24,7 @@ import java.lang.reflect.Field;
  * @date 2018/12/19
  */
 public class TvMetroLayout extends ScrollView {
+    private FrameLayout mRootLayout;
     private SlidingMetroStrip mSlidingMetroStrip;
     ScrollMetroHelper mScrollHelper;
     private FixedSpeedScroller mScroller;
@@ -50,7 +52,9 @@ public class TvMetroLayout extends ScrollView {
         mSlidingMetroStrip = new SlidingMetroStrip(context);
         mSlidingMetroStrip.setPadding(getPaddingLeft(), getPaddingTop(), getPaddingRight(), getPaddingBottom());
         mScrollHelper = new ScrollMetroHelper(this, mSlidingMetroStrip, attrs, true);
-        super.addView(mSlidingMetroStrip, 0, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+        mRootLayout = new FrameLayout(context);
+        mRootLayout.addView(mSlidingMetroStrip, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        super.addView(mRootLayout, 0, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
         super.setPadding(0, 0, 0, 0);
     }
 
@@ -79,6 +83,10 @@ public class TvMetroLayout extends ScrollView {
         } catch (Exception e) {
             Log.e(this.getClass().getSimpleName(), e.getMessage());
         }
+    }
+
+    public FrameLayout getRootLayout() {
+        return mRootLayout;
     }
 
     @Override
