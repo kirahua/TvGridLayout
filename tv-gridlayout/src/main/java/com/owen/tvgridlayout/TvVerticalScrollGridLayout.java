@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.view.View;
@@ -17,7 +18,7 @@ import android.widget.ScrollView;
  * @email zhousuqiang@126.com
  * @date 2018/12/25
  */
-public class TvVerticalScrollGridLayout extends ScrollView {
+public class TvVerticalScrollGridLayout extends NestedScrollView {
     private TvGridLayout mTvGridLayout;
     private ScrollGridHelper mScrollGridHelper;
 
@@ -31,12 +32,6 @@ public class TvVerticalScrollGridLayout extends ScrollView {
 
     public TvVerticalScrollGridLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context, attrs, defStyleAttr);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public TvVerticalScrollGridLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs, defStyleAttr);
     }
 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -42,6 +41,14 @@ public class TvMetroLayout extends ScrollView {
 
         init(context, attrs, defStyleAttr);
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public TvMetroLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+
+        init(context, attrs, defStyleAttr);
+    }
+
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         setClipChildren(false);
@@ -91,13 +98,15 @@ public class TvMetroLayout extends ScrollView {
 
     @Override
     public void setPadding(int left, int top, int right, int bottom) {
-        mScrollHelper.setPadding(left, top, right, bottom);
+        if (null != mScrollHelper)
+            mScrollHelper.setPadding(left, top, right, bottom);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     public void setPaddingRelative(int start, int top, int end, int bottom) {
-        mScrollHelper.setPaddingRelative(start, top, end, bottom);
+        if (null != mScrollHelper)
+            mScrollHelper.setPaddingRelative(start, top, end, bottom);
     }
 
 //    /**
