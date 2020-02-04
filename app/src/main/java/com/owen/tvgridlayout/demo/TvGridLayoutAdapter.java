@@ -1,6 +1,6 @@
 package com.owen.tvgridlayout.demo;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.owen.tvgridlayout.TvGridLayout;
 

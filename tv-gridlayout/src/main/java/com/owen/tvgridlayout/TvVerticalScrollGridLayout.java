@@ -4,14 +4,13 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ScrollView;
+
+import androidx.core.widget.NestedScrollView;
+import androidx.gridlayout.widget.GridLayout;
 
 /**
  * @author ZhouSuQiang

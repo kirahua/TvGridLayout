@@ -3,7 +3,6 @@ package com.owen.tvgridlayout;
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +13,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.OverScroller;
 import android.widget.ScrollView;
+
+import androidx.annotation.RequiresApi;
 
 import java.lang.reflect.Field;
 

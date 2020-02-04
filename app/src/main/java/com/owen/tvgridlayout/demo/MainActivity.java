@@ -1,25 +1,16 @@
 package com.owen.tvgridlayout.demo;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayout;
-import android.util.Log;
-import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import com.owen.focus.AbsFocusBorder;
-import com.owen.focus.FocusBorder;
-import com.owen.tvgridlayout.ScrollHelper;
 import com.owen.tvgridlayout.SimpleOnItemListener;
 import com.owen.tvgridlayout.TvGridLayout;
-import com.owen.tvgridlayout.TvMetroLayout;
 
 public class MainActivity extends BaseActivity {
     private boolean isXmlMode = true; //表示是否从xml加载布局展示，否则将采用Adapter方式进行布局展示

@@ -2,16 +2,16 @@ package com.owen.tvgridlayout;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
+
+import androidx.annotation.RequiresApi;
+import androidx.gridlayout.widget.GridLayout;
 
 /**
  * @author ZhouSuQiang

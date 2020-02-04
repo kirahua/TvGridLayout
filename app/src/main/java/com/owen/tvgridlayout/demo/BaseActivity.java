@@ -1,10 +1,11 @@
 package com.owen.tvgridlayout.demo;
 
 import android.graphics.Color;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.View;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.owen.focus.AbsFocusBorder;
 import com.owen.focus.FocusBorder;

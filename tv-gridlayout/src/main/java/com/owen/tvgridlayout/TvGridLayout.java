@@ -2,20 +2,20 @@ package com.owen.tvgridlayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.gridlayout.widget.GridLayout;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * @author ZhouSuQiang

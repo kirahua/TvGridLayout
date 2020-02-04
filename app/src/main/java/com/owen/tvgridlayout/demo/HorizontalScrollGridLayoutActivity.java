@@ -8,7 +8,6 @@ import com.owen.tvgridlayout.ScrollHelper;
 import com.owen.tvgridlayout.SimpleOnItemListener;
 import com.owen.tvgridlayout.TvGridLayout;
 import com.owen.tvgridlayout.TvHorizontalScrollGridLayout;
-import com.owen.tvgridlayout.TvVerticalScrollGridLayout;
 
 public class HorizontalScrollGridLayoutActivity extends BaseActivity {
 

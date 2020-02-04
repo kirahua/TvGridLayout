@@ -29,7 +29,7 @@ publish {
     userOrg = 'zhousuqiang'
     groupId = 'com.owen'
     artifactId = 'tv-gridlayout'
-    publishVersion = '1.0.5'
+    publishVersion = '2.0.0'
     desc = '适配Android Tv 端的 GridLayout，对焦点、间距等进行优化'
     website = 'https://github.com/zhousuqiang/TvGridLayout'
 }
@@ -37,6 +37,6 @@ publish {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "com.android.support:appcompat-v7:$supportVersion"
-    api "com.android.support:gridlayout-v7:$supportVersion"
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    api "androidx.gridlayout:gridlayout:1.0.0"
 }
