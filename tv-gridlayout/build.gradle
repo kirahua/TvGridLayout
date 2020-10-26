@@ -29,7 +29,7 @@ publish {
     userOrg = 'zhousuqiang'
     groupId = 'com.owen'
     artifactId = 'tv-gridlayout'
-    publishVersion = '2.0.0'
+    publishVersion = '2.0.1'
     desc = '适配Android Tv 端的 GridLayout，对焦点、间距等进行优化'
     website = 'https://github.com/zhousuqiang/TvGridLayout'
 }

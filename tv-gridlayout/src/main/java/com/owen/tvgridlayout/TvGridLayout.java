@@ -305,6 +305,10 @@ public class TvGridLayout extends GridLayout implements View.OnFocusChangeListen
         return mSelectedPosition;
     }
 
+    public void setSelectedPosition(int selectedPosition) {
+        mSelectedPosition = selectedPosition;
+    }
+
     public void setSelection(int position) {
         View view = getChildView(position);
         if(null != view) {
